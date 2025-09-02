@@ -66,7 +66,7 @@ Una API REST es un estilo arquitectónico basado en HTTP que permite la comunica
 
 ## 📁 Estructura del Proyecto
 
-```bash
+
 TechMarket-Tests/
 ├── postman/
 │   ├── TechMarket.postman_collection.json
@@ -77,7 +77,7 @@ TechMarket-Tests/
 │   ├── src/test/java/com/techmarket/api/
 │   └── pom.xml
 ├── README.md
-```
+
 
 
 
