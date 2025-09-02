@@ -1,7 +1,3 @@
-¡Perfecto, Mauricio! Aquí tienes un `README.md` estructurado, defendible y listo para subir a tu repositorio. Incluye descripción técnica, herramientas utilizadas, buenas prácticas, amenazas mitigadas y justificación del enfoque. También puedes usarlo como base para tu defensa oral o presentación técnica.
-
----
-
 ```markdown
 # 🧪 TechMarket - Suite de Pruebas Automatizadas
 
@@ -9,7 +5,6 @@
 
 Validar el correcto funcionamiento, seguridad y robustez de la API REST de **TechMarket** mediante pruebas manuales, automatizadas y generación de reportes. Se aplicaron buenas prácticas de diseño, mitigación de amenazas y herramientas especializadas para asegurar la calidad del sistema.
 
----
 
 ## 🔍 ¿Qué es una API REST?
 
@@ -20,20 +15,19 @@ Una API REST es un estilo arquitectónico basado en HTTP que permite la comunica
 - **Gestión de productos**: `/api/v1/products`
 - **Registro y autenticación de usuarios**: `/api/v1/auth`
 
----
 
 ## ⚙️ Componentes principales de una API REST
 
-| Componente       | Ejemplo en TechMarket                          |
-|------------------|------------------------------------------------|
-| Recurso          | `/products`, `/auth`                          |
-| Método HTTP      | `GET`, `POST`, `PUT`, `DELETE`                |
-| Endpoint         | `GET /api/v1/products`, `POST /api/v1/auth/login` |
-| Body (JSON)      | `{ "name": "Laptop", "price": 999.99 }`       |
+| Componente       | Ejemplo en TechMarket                                             |
+|------------------|-------------------------------------------------------------------|
+| Recurso          | `/products`, `/auth`                                              |
+| Método HTTP      | `GET`, `POST`, `PUT`, `DELETE`                                    |
+| Endpoint         | `GET /api/v1/products`, `POST /api/v1/auth/login`                 |
+| Body (JSON)      | `{ "name": "Laptop", "price": 999.99 }`                           |
 | Headers          | `Content-Type: application/json`, `Authorization: Bearer <token>` |
-| Códigos HTTP     | `200 OK`, `201 Created`, `404 Not Found`, `401 Unauthorized` |
+| Códigos HTTP     | `200 OK`, `201 Created`, `404 Not Found`, `401 Unauthorized`      |
 
----
+
 
 ## 🛠️ Herramientas Utilizadas
 
@@ -43,7 +37,7 @@ Una API REST es un estilo arquitectónico basado en HTTP que permite la comunica
 | **Newman**      | Ejecución automatizada de colecciones Postman vía CLI      |
 | **Rest-Assured**| Pruebas automatizadas en Java, validación de respuestas    |
 
----
+
 
 ## ✅ Buenas Prácticas Aplicadas
 
@@ -55,24 +49,24 @@ Una API REST es un estilo arquitectónico basado en HTTP que permite la comunica
 - **Seguridad**: Autenticación con JWT, encriptación con `PasswordEncoder`
 - **Registro RESTful**: Uso de `Location` header en respuestas `POST`
 
----
+
 
 ## 🔐 Amenazas de Seguridad y Mitigaciones
 
-| Amenaza                  | Mitigación Implementada                                  |
-|--------------------------|----------------------------------------------------------|
-| Acceso no autorizado     | JWT en endpoints protegidos                              |
+| Amenaza                  | Mitigación Implementada                                     |
+|--------------------------|-------------------------------------------------------------|
+| Acceso no autorizado     | JWT en endpoints protegidos                                 |
 | Credenciales débiles     | Validación con `@Valid`, encriptación con `PasswordEncoder` |
-| Exposición de datos      | Uso de `ProductDTO`, no se expone `password`             |
-| Usuarios duplicados      | Validación con `existsByEmail()`                         |
-| Tokens reutilizables     | Control con `tokenVersion` en `UserAccount`              |
-| Auditoría                | Logs y capturas agregadas para trazabilidad              |
+| Exposición de datos      | Uso de `ProductDTO`, no se expone `password`                |
+| Usuarios duplicados      | Validación con `existsByEmail()`                            |
+| Tokens reutilizables     | Control con `tokenVersion` en `UserAccount`                 |
+| Auditoría                | Logs y capturas agregadas para trazabilidad                 |
 
----
+
 
 ## 📁 Estructura del Proyecto
 
-```
+```bash
 TechMarket-Tests/
 ├── postman/
 │   ├── TechMarket.postman_collection.json
@@ -85,7 +79,7 @@ TechMarket-Tests/
 ├── README.md
 ```
 
----
+
 
 ## 📊 Resultados y Evidencias
 
